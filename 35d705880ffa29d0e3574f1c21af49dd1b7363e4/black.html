@@ -1,0 +1,35 @@
+<pre>
+error: cannot format lib2.py: unindent does not match any outer indentation level (<tokenize>, line 5)
+--- lib.py	2023-07-16 19:32:31.288937 +0000
++++ lib.py	2023-07-16 19:32:31.858551 +0000
+@@ -1,11 +1,11 @@
+ # 3202168832377317591
+ class QuadraticEquationSolver:
+     def __init__(self, a, b, c):
+-         self.a = a
+-         self.b = b
+-         self.c =  c
++        self.a = a
++        self.b = b
++        self.c = c
+ 
+     def solve(self):
+         d = self.b**2 - 4 * self.a * self.c
+ 
+         if d <= 0:
+@@ -16,10 +16,5 @@
+ 
+         return [
+             (-self.b + d**0.5) / (2 * self.a),
+             (-self.b - d**0.5) / (2 * self.a),
+         ]
+-
+-
+-
+-
+-
+would reformat lib.py
+
+Oh no! 💥 💔 💥
+1 file would be reformatted, 2 files would be left unchanged, 1 file would fail to reformat.
+</pre>
